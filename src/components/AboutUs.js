@@ -3,7 +3,7 @@ import React from "react";
 export const AboutUs= ()=> {
   return (
     <div
-      className="w-screen xl:py-20 sm:py-10 py-5 bg-yellow-500"
+      className="xl:py-20 sm:py-10 py-5 bg-yellow-500"
       id="about"
       style={{ opacity: 1, transform: "none" }}
     >
