@@ -6,14 +6,13 @@ import { Numbers } from "./components/Numbers";
 import { AboutUs } from "./components/AboutUs";
 import { Events } from "./components/Events";
 import { Renaissance } from "./components/Renaissance";
-import { StartUps } from "./components/StartUps";
 import { LinesOfApp } from "./components/LinesOfApp";
 import { Footer } from "./components/Footer";
-
+import AutoPlay from './components/AutoPlay';
 function App() {
   return (
     <>
-    
+
       <Navbar></Navbar>
 
       <HeroSection></HeroSection>
@@ -26,7 +25,8 @@ function App() {
 
       <Renaissance></Renaissance>
 
-      <StartUps></StartUps>
+      {/* <StartUps></StartUps> */}
+      <AutoPlay></AutoPlay>
 
       <LinesOfApp></LinesOfApp>
 
