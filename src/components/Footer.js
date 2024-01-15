@@ -23,13 +23,13 @@ export const Footer = () => {
           </h2>
           <nav className="list-none mb-10">
             <li>
-              <a className="flex justify-between mb-2  text-gray-400 text-2xl hover:text-white"> <img className=' hover:scale-125 transition-transform transform h-[8vh] bg-gray-300 rounded-xl p-1' src={location}></img>E-Cell, MNNIT Allahabad, India</a>
+              <a className="flex justify-start mb-2  text-gray-400 text-2xl hover:text-white"> <img className='mx-2 hover:scale-125 transition-transform transform h-[8vh] bg-gray-300 rounded-xl p-1' src={location}></img>E-Cell, MNNIT Allahabad, India</a>
             </li>
             <li>
-              <a className="flex justify-between mb-2 text-2xl text-gray-400 hover:text-white">   <img className='hover:scale-125 transition-transform transform h-[8vh] bg-gray-300 rounded-xl p-1' src={contact}></img> +91 7726924556</a>
+              <a className="flex  justify-start mb-2 text-2xl text-gray-400 hover:text-white">   <img className='mx-2 hover:scale-125 transition-transform transform h-[8vh] bg-gray-300 rounded-xl p-1' src={contact}></img> +91 7726924556</a>
             </li>
             <li>
-              <a className="flex justify-between break-all text-2xl text-gray-400 hover:text-white"><img className='hover:scale-125 transition-transform transform h-[8vh] bg-gray-300 rounded-xl p-1' src={email}></img> support@ecellmnnit.com</a>
+              <a className="flex justify-start  break-all text-2xl text-gray-400 hover:text-white"><img className='mx-2 hover:scale-125 transition-transform transform h-[8vh] bg-gray-300 rounded-xl p-1' src={email}></img> support@ecellmnnit.com</a>
             </li>
            
           </nav>
