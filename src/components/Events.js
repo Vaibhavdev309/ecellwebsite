@@ -122,7 +122,7 @@ export const Events = () => {
   };
 
   return (
-    <>
+    <div id="events">
       {model && (
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex items-center justify-center z-[999]">
           <button
@@ -178,6 +178,6 @@ export const Events = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
