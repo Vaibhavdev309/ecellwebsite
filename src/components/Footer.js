@@ -5,8 +5,8 @@ import location from '../assests/icons/location.svg'
 export const Footer = () => {
   return (
     <footer className="text-gray-400 bg-gray-900 body-font">
-    <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-      <div className=" flex-shrink-0 md:mx-0  text-center md:text-left">
+    <div className="container px-5 py-24 mx-auto flex  lg:items-start md:flex-row justify-center  flex-wrap flex-col">
+      <div className=" flex-shrink-0  text-center ">
       <div className='flex justify-center'>
           <img  className="h-60 text-white  " src='https://e-cellmnnit.netlify.app/static/media/logo1.aa59d10dce000c1b6a45.png'/>
    
@@ -16,7 +16,7 @@ export const Footer = () => {
           E-Cell MNNIT
         </p>
       </div>
-      <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div className="flex-grow flex flex-wrap -mb-10  mt-10  text-center">
         <div className="lg:w-1/2 md:w-1/2  w-full px-4">
           <h2 className="title-font text-center  text-black tracking-widest text-2xl lg:text-4xl rounded-md font-semibold bg-gradient-to-r from-green-600 to-[#92f242] p-6 mb-3">
           GET IN TOUCH
