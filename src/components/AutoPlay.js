@@ -84,11 +84,11 @@ export default class AutoPlay extends Component {
     };
 
     return (
-      <div className="w-[100%] mx-auto h-[200px] bg-pink-100 lg:h-[540px] md:h-[350px] rounded-lg  md:pt-0 flex flex-col justify-center items-center space-y-4 lg:space-y-10 md:space-y-10 ">
+      <div className="w-[100%] mx-auto h-[200px] bg-gradient-to-r from-gray-900 to-gray-800 lg:h-[540px] md:h-[350px]   md:pt-0 flex flex-col justify-center items-center space-y-4 lg:space-y-10 md:space-y-10 ">
         <div className="mt-0 ">
           <h2
             ref={this.headingRef}
-            className="mx-auto lg:text-5xl md:text-3xl font-bold opacity-0 mt-0"
+            className="mx-auto lg:text-5xl md:text-3xl font-bold opacity-0 mt-0 text-white"
           >
             STARTUPS FROM MNNIT
           </h2>

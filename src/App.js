@@ -23,12 +23,12 @@ function App() {
 
       <Events></Events>
 
-      <Renaissance></Renaissance>
+      {/* <Renaissance></Renaissance> */}
 
       {/* <StartUps></StartUps> */}
       <AutoPlay></AutoPlay>
 
-      <LinesOfApp></LinesOfApp>
+      {/* <LinesOfApp></LinesOfApp> */}
 
       <Footer></Footer>
 
