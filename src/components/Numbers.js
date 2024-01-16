@@ -4,7 +4,7 @@ import Participants from "../assests/icons/participants.svg";
 import Startups from "../assests/icons/startups.svg";
 import speaker from "../assests/icons/speaker.svg";
 const AnimatedNumber = ({ start, end, duration = 2000 }) => {
-  const [currentNumber, setCurrentNumber] = useState(0);
+  const [currentNumber, setCurrentNumber] = useState(start);
   const [hasAnimated, setHasAnimated] = useState(false);
   const numberRef = useRef(null);
 
