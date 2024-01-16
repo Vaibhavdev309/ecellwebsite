@@ -6,7 +6,7 @@ export const HeroSection = () => {
     document.getElementById('about').scrollIntoView({behavior:'smooth'})
   }
   return (
-    <div className='bg-cover h-screen relative bg-fixed w-full' style={{
+    <div id="home" className='bg-cover h-screen relative bg-fixed w-full' style={{
       backgroundImage:`url('https://images.pexels.com/photos/599982/pexels-photo-599982.jpeg?auto=compress&cs=tinysrgb&w=600')`
       }}>
           <div className='absolute inset-0 bg-black opacity-50'></div>
