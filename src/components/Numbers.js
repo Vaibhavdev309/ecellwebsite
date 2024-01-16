@@ -1,32 +1,50 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useRef } from "react";
 import College from "../assests/icons/college.svg";
 import Participants from "../assests/icons/participants.svg";
 import Startups from "../assests/icons/startups.svg";
 import speaker from "../assests/icons/speaker.svg";
 const AnimatedNumber = ({ start, end, duration = 2000 }) => {
   const [currentNumber, setCurrentNumber] = useState(start);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const numberRef = useRef(null);
 
   useEffect(() => {
-    const startTime = performance.now();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !hasAnimated) {
+          const startTime = performance.now();
 
-    const updateNumber = (timestamp) => {
-      const progress = (timestamp - startTime) / duration;
+          const updateNumber = (timestamp) => {
+            const progress = (timestamp - startTime) / duration;
 
-      if (progress < 1) {
-        setCurrentNumber(Math.floor(start + progress * (end - start)));
-        requestAnimationFrame(updateNumber);
-      } else {
-        setCurrentNumber(end);
+            if (progress < 1) {
+              setCurrentNumber(Math.floor(start + progress * (end - start)));
+              requestAnimationFrame(updateNumber);
+            } else {
+              setCurrentNumber(end);
+              setHasAnimated(true);
+            }
+          };
+
+          requestAnimationFrame(updateNumber);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (numberRef.current) {
+      observer.observe(numberRef.current);
+    }
+
+    return () => {
+      if (numberRef.current) {
+        observer.unobserve(numberRef.current);
       }
     };
-
-    requestAnimationFrame(updateNumber);
-
-    return () => cancelAnimationFrame(updateNumber);
-  }, [start, end, duration]);
+  }, [start, end, duration, hasAnimated]);
 
   return (
-    <div className="m-auto font-bold" style={{ fontSize: "2em" }}>
+    <div className="m-auto font-bold" style={{ fontSize: "2em" }} ref={numberRef}>
       {currentNumber}+
     </div>
   );
@@ -35,7 +53,7 @@ const AnimatedNumber = ({ start, end, duration = 2000 }) => {
 
 export const Numbers=()=> {
   return (
-    <div className="bg-gray-300 flex w-full md:h-[60vh] p-[4%]" id="stats">
+    <div id="numbers" className="bg-gray-300 flex w-full md:h-[60vh] p-[4%]" id="stats">
       <div className="flex w-full flex-col md:flex-row bg-pink-100 rounded-3xl">
         {/* College Section */}
         <div className="flex flex-col m-auto h-[60%]">
