@@ -38,18 +38,7 @@ export default class AutoPlay extends Component {
   };
 
   render() {
-    const imagePaths = [
-      "/StartUpLogos/Babtra.png",
-      "/StartUpLogos/Drivezy.png",
-      "/StartUpLogos/EveryCrave.png",
-      "/StartUpLogos/Kratikal.png",
-      "/StartUpLogos/Loco.png",
-      "/StartUpLogos/Pvr.png",
-      "/StartUpLogos/Symb.png",
-      "/StartUpLogos/Trelos.png",
-      "/StartUpLogos/Unacademy.png",
-    ];
-
+    
     const imageData = [
       { imagePath: "/StartUpLogos/Babtra.png", link: "https://baabtra.com/" },
       {
@@ -104,15 +93,15 @@ export default class AutoPlay extends Component {
             STARTUPS FROM MNNIT
           </h2>
         </div>
-        <div className="carousel-container bg-[#191970] border rounded-lg h-[100px]  lg:h-[60%] w-[95%] mx-auto  flex flex-col ">
+        <div className="carousel-container  bg-gray-900 border rounded-lg h-[100px]  lg:h-[60%] w-[95%] mx-auto  flex flex-col ">
           <Slider
             {...settings}
-            className="w-[90%] mx-auto my-auto bg-[#191970]"
+            className="w-[90%] mx-auto my-auto  bg-gray-900"
           >
             {imageData.map((data, index) => (
               <div
                 key={index}
-                className=" h:[50px] mb- md:h-[185px] md:lg:h-[230px] slide bg-[#191970]"
+                className=" h:[50px] mb- md:h-[185px] md:lg:h-[230px] slide  bg-gray-900"
               >
                 <a
                   key={index}
