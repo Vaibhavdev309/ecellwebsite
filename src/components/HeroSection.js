@@ -1,13 +1,15 @@
 import React from 'react'
 import './Hero.css'
-
+import HeroBG from "../assests/img/beautiful-manhattan-s-river-sunset.jpg";
 export const HeroSection = () => {
   const scroll = ()=>{
     document.getElementById('about').scrollIntoView({behavior:'smooth'})
   }
   return (
     <div id="home" className='bg-cover h-screen relative bg-fixed w-full' style={{
-      backgroundImage:`url('https://images.pexels.com/photos/599982/pexels-photo-599982.jpeg?auto=compress&cs=tinysrgb&w=600')`
+      backgroundImage: `url(${HeroBG})`,
+      // backgroundSize: 'contain', // or 'contain'
+
       }}>
           <div className='absolute inset-0 bg-black opacity-50'></div>
           <div className='absolute inset-0 font-bold max-md:text-6xl text-8xl text-white h-screen flex justify-center items-center'>
