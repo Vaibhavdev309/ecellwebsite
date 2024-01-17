@@ -1,16 +1,16 @@
 import React from "react";
 import Header from "./components/header";
-import Testimonials from "./components/reviews";
+import Reviews from "./components/reviews";
 
-const ReviewSection = () => {
+const LinesOfApp = () => {
   return (
     <div className="p-10 relative bg-gray-700">
       {/* Header */}
       <Header />
       {/* Testimonials  */}
-      <Testimonials />
+      <Reviews />
     </div>
   );
 };
 
-export default ReviewSection;
+export default LinesOfApp;

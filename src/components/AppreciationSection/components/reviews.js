@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import UserReviewCard from "../../../shared/Cards/AppreciationCard";
 
-const Testimonials = () => {
+const Reviews = () => {
   const [slidesToShow, setSlidesToShow] = useState(1);
 
   const updateSlidesToShow = () => {
@@ -104,4 +104,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Reviews;
